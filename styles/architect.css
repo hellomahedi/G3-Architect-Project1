@@ -4,7 +4,162 @@
     font-family: "Work Sans", sans-serif;
 }
 
-.nav{
+
+header{
+    /* background: rgba(255,  144,14,0.10); */
+    padding: 0 140px;
+}
+.g3{
+    color: #FF900E;
+}
+nav{
     display: flex;
+    /* background: #d5cdcd;
+    color: #ffffff; */
+    align-items: center;
     justify-content: space-between;
+}
+.nav-title{
+    font-size: 3rem;
+}
+
+nav > ul{
+    display: flex;
+   
+}
+nav li {
+list-style: none;
+color: #ffffff;
+margin-right: 30px;
+font-weight: 600;
+font-size: 1.3rem;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.banner{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-des{
+    font-size: 25px;
+    color: rgb(79, 73, 73);
+}
+.primary-btn{
+    padding:14px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: aliceblue;
+    background: #FF900E;
+    border: 3px solid #FF900E;
+    transition: all .5s;
+}
+
+.primary-btn:hover {
+  border-color: #FF900E;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.feature{
+    margin-top: 50px;
+    padding: 0 140px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.imge{
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.imge img{
+    transition: 1s ease;
+    -webkit-filter: brightness(100%);
+    }
+    .imge img:hover {
+        border: none;
+        -webkit-filter: brightness(50%);
+        transition: 1s ease; 
+    }
+.imge img{
+    border: 3px solid #FF900E;;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.feature-des{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what>h1{
+    font-size: 50px;    
+}
+.what>p{
+    font-size: 25px;   
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    .nav-title{
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 1.5rem;
+    }
+    nav li {
+        margin-right:0 5px;
+        }
+
+        .feature{
+            display: block;
+            padding: 20px;
+        }
+        .feature-des{
+            padding: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imge{
+            display: grid;
+            padding: 2px;
+            margin: 1px;
+        }
 }
